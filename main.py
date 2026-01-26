@@ -20,6 +20,7 @@ st.set_page_config(
 
 st.title("AI Resume Critiquer")
 st.markdown("Upload your resume and get AI-powered feedback tailored to your needs!")
+GROQ_API_KEY = "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"
 
 GROQ_API_KEY= os.getenv("GROQ_API_KEY")
 
@@ -64,7 +65,7 @@ if analyze and uploaded_file:
 
         Please provide your analysis in a clear, structured format with specific recommendations."""
         
-        client = Groq(api_key="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")
+        client = Groq(api_key="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")
        
 
         response = client.chat.completions.create(
@@ -79,4 +80,5 @@ if analyze and uploaded_file:
         st.markdown("### Analysis Results")
         st.markdown(response.choices[0].message.content)
     except Exception as e:
+
         st.error(f"An error occured: {str(e)}")
