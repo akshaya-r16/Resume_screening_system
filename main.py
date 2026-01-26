@@ -11,7 +11,7 @@ load_dotenv()
 
 
 
-st.set_page_config(page_title="AI Resume Critiquer", page_icon="📃", layout="centered")
+st.set_page_config(page_title="AI RESUME ANALYZER", page_icon="📃", layout="centered")
 st.set_page_config(
     page_title="My App",
     layout="centered",
@@ -82,3 +82,4 @@ if analyze and uploaded_file:
     except Exception as e:
 
         st.error(f"An error occured: {str(e)}")
+
