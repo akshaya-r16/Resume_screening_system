@@ -3,4 +3,6 @@ pdfminer.six
 sentence-transformers
 scikit-learn
 groq
+PyPDF2
+
 python-dotenv
